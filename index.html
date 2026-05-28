@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uber Black — Onde o Luxo te Espera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">
+    <svg width="60" height="22" viewBox="0 0 600 220" fill="currentColor">
+      <path d="M220 180c-55.2 0-100-44.8-100-100S164.8-20 220-20s100 44.8 100 100-44.8 100-100 100zm0-156c-30.9 0-56 25.1-56 56s25.1 56 56 56 56-25.1 56-56-25.1-56-56-56zM0 174V26h44v148H0zm372 6c-53.5 0-96-42.5-96-96S318.5-12 372-12c26.5 0 50.5 10.7 67.8 28.1L410 46c-10.5-11.2-25.4-18.2-42.5-18.2-32.2 0-58.3 26.1-58.3 58.3S335.3 144.4 367.5 144.4c17.1 0 32-7 42.5-18.2l29.8 29.9C422.5 173.5 398.5 180 372 180zm228 0c-53.5 0-96-42.5-96-96S546.5-12 600-12v44c-30.9 0-55 24.1-55 56s24.1 56 55 56v36c-26.5 0-50.5-10.7-67.8-28.1"/>
+    </svg>
+    <span class="nav-badge">BLACK</span>
+  </div>
+  <div class="nav-links">
+    <a href="#">Frota</a>
+    <a href="#">Benefícios</a>
+    <a href="#">Cobertura</a>
+    <button class="nav-cta">Solicitar agora</button>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="noise-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">Experiência Premium</div>
+    <h1 class="hero-title">
+      <span class="line-1">Vá para</span>
+      <span class="line-2 italic">onde quiser</span>
+      <span class="line-3">— em silêncio.</span>
+    </h1>
+    <p class="hero-sub">Motoristas de elite. Carros premium. Pontualidade absoluta.<br>Isso não é apenas uma viagem. É um padrão de vida.</p>
+    <div class="hero-actions">
+      <button class="btn-primary">Solicitar Black</button>
+      <button class="btn-ghost">Ver frota <span class="arrow">→</span></button>
+    </div>
+  </div>
+
+  <!-- Floating iPhone 3D -->
+  <div class="iphone-wrap" id="iphoneWrap">
+    <div class="iphone" id="iphone3d">
+      <div class="iphone-screen">
+        <div class="iphone-notch"></div>
+        <div class="iphone-ui">
+          <div class="app-header">
+            <div class="app-logo-small">U</div>
+            <span>Uber Black</span>
+          </div>
+          <div class="map-placeholder">
+            <div class="map-dot"></div>
+            <div class="map-route"></div>
+            <div class="car-icon">🚘</div>
+          </div>
+          <div class="eta-card">
+            <span class="eta-label">Chegada estimada</span>
+            <span class="eta-time">3 min</span>
+          </div>
+          <div class="driver-strip">
+            <div class="driver-avatar">A</div>
+            <div class="driver-info">
+              <span class="driver-name">Alexandre M.</span>
+              <span class="driver-stars">★★★★★ 4.98</span>
+            </div>
+            <div class="car-model">BMW 750i</div>
+          </div>
+        </div>
+      </div>
+      <div class="iphone-btn-side"></div>
+      <div class="iphone-btn-power"></div>
+    </div>
+    <!-- Floating cards around iPhone -->
+    <div class="floating-card fc-1">
+      <div class="fc-icon">🛡️</div>
+      <div>
+        <div class="fc-title">Segurança Total</div>
+        <div class="fc-sub">GPS em tempo real</div>
+      </div>
+    </div>
+    <div class="floating-card fc-2">
+      <div class="fc-icon">⭐</div>
+      <div>
+        <div class="fc-title">4.97 Média</div>
+        <div class="fc-sub">de 50k avaliações</div>
+      </div>
+    </div>
+    <div class="floating-card fc-3">
+      <div class="fc-icon">🕐</div>
+      <div>
+        <div class="fc-title">3 min</div>
+        <div class="fc-sub">tempo médio</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-hint" id="scrollHint">
+    <span>Role para descobrir</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TRANSITION / DARK SECTION -->
+<section class="section-transition" id="sectionTransition">
+  <div class="transition-text">
+    <div class="t-line" data-scroll>Não é um táxi.</div>
+    <div class="t-line" data-scroll>Não é uma corrida comum.</div>
+    <div class="t-line highlight" data-scroll>É a Uber Black.</div>
+  </div>
+</section>
+
+<!-- BLACK SECTION -->
+<section class="section-black" id="sectionBlack">
+  <div class="black-bg"></div>
+  <div class="glow-orb" id="glowOrb"></div>
+  <div class="noise-overlay dark"></div>
+
+  <div class="car-scene" id="carScene">
+    <div class="car-spotlight"></div>
+    <div class="car-container" id="uberCar">
+      <!-- SVG Car Side View -->
+      <svg class="car-svg" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
+        <!-- Body shadow -->
+        <ellipse cx="450" cy="300" rx="360" ry="18" fill="rgba(0,0,0,0.6)"/>
+        <!-- Car body -->
+        <path d="M80 210 Q90 180 120 160 L250 100 Q300 80 380 78 L550 78 Q620 80 660 100 L750 150 Q800 170 820 210 L820 250 Q820 260 810 260 L90 260 Q80 260 80 250 Z" fill="#0a0a0a"/>
+        <!-- Car roof highlight -->
+        <path d="M200 160 L280 100 Q330 82 400 80 L530 80 Q590 82 630 100 L710 150 L700 158 L220 158 Z" fill="#111"/>
+        <!-- Windows -->
+        <path d="M230 160 L300 108 Q335 88 390 86 L480 86 L475 158 Z" fill="#1a2744" opacity="0.9"/>
+        <path d="M490 86 L560 86 Q600 88 625 108 L670 158 L480 158 Z" fill="#1a2744" opacity="0.9"/>
+        <!-- Window frames -->
+        <path d="M228 160 L300 107 Q336 87 392 85 L478 85 L476 160 Z" fill="none" stroke="#2a3a5c" stroke-width="1.5"/>
+        <path d="M488 85 L562 85 Q603 87 628 107 L672 160 L488 160 Z" fill="none" stroke="#2a3a5c" stroke-width="1.5"/>
+        <!-- B-pillar -->
+        <rect x="477" y="85" width="12" height="75" fill="#0a0a0a"/>
+        <!-- Hood line -->
+        <path d="M80 210 L130 210 Q140 200 160 180 L240 165 L230 160 L120 160 Q100 175 80 210Z" fill="#0f0f0f"/>
+        <!-- Trunk -->
+        <path d="M720 160 L750 155 Q790 165 820 200 L820 210 L720 210 Z" fill="#0f0f0f"/>
+        <!-- Wheel wells -->
+        <path d="M185 250 Q185 220 215 210 Q245 200 270 210 Q300 220 300 250 Z" fill="#050505"/>
+        <path d="M600 250 Q600 220 630 210 Q660 200 685 210 Q715 220 715 250 Z" fill="#050505"/>
+        <!-- Wheels -->
+        <circle cx="235" cy="256" r="42" fill="#111" stroke="#222" stroke-width="2"/>
+        <circle cx="235" cy="256" r="30" fill="#0d0d0d" stroke="#333" stroke-width="1"/>
+        <circle cx="235" cy="256" r="18" fill="#1a1a1a" stroke="#444" stroke-width="1"/>
+        <circle cx="235" cy="256" r="6" fill="#555"/>
+        <!-- Wheel spokes -->
+        <line x1="235" y1="226" x2="235" y2="246" stroke="#555" stroke-width="3"/>
+        <line x1="235" y1="266" x2="235" y2="286" stroke="#555" stroke-width="3"/>
+        <line x1="205" y1="256" x2="225" y2="256" stroke="#555" stroke-width="3"/>
+        <line x1="245" y1="256" x2="265" y2="256" stroke="#555" stroke-width="3"/>
+        <line x1="214" y1="235" x2="224" y2="245" stroke="#555" stroke-width="2"/>
+        <line x1="246" y1="267" x2="256" y2="277" stroke="#555" stroke-width="2"/>
+        <line x1="256" y1="235" x2="246" y2="245" stroke="#555" stroke-width="2"/>
+        <line x1="224" y1="267" x2="214" y2="277" stroke="#555" stroke-width="2"/>
+
+        <circle cx="650" cy="256" r="42" fill="#111" stroke="#222" stroke-width="2"/>
+        <circle cx="650" cy="256" r="30" fill="#0d0d0d" stroke="#333" stroke-width="1"/>
+        <circle cx="650" cy="256" r="18" fill="#1a1a1a" stroke="#444" stroke-width="1"/>
+        <circle cx="650" cy="256" r="6" fill="#555"/>
+        <line x1="650" y1="226" x2="650" y2="246" stroke="#555" stroke-width="3"/>
+        <line x1="650" y1="266" x2="650" y2="286" stroke="#555" stroke-width="3"/>
+        <line x1="620" y1="256" x2="640" y2="256" stroke="#555" stroke-width="3"/>
+        <line x1="660" y1="256" x2="680" y2="256" stroke="#555" stroke-width="3"/>
+        <line x1="629" y1="235" x2="639" y2="245" stroke="#555" stroke-width="2"/>
+        <line x1="661" y1="267" x2="671" y2="277" stroke="#555" stroke-width="2"/>
+        <line x1="671" y1="235" x2="661" y2="245" stroke="#555" stroke-width="2"/>
+        <line x1="639" y1="267" x2="629" y2="277" stroke="#555" stroke-width="2"/>
+
+        <!-- Door lines -->
+        <line x1="480" y1="160" x2="480" y2="252" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="360" y1="165" x2="355" y2="252" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="600" y1="165" x2="605" y2="252" stroke="#1a1a1a" stroke-width="1"/>
+
+        <!-- Door handles -->
+        <rect x="410" y="205" width="35" height="6" rx="3" fill="#222" stroke="#333" stroke-width="0.5"/>
+        <rect x="530" y="205" width="35" height="6" rx="3" fill="#222" stroke="#333" stroke-width="0.5"/>
+
+        <!-- Headlights -->
+        <path d="M82 195 Q90 180 110 175 L145 172 L145 200 L82 200 Z" fill="#0a0a0a" stroke="#1a1a1a" stroke-width="1"/>
+        <path d="M85 190 Q92 180 108 177 L140 175 L140 197 L88 197 Z" fill="#c8a84b" opacity="0.15"/>
+        <!-- DRL strip -->
+        <path d="M86 198 L138 196" stroke="#c8a84b" stroke-width="2" opacity="0.7"/>
+
+        <!-- Taillights -->
+        <rect x="750" y="170" width="65" height="65" rx="2" fill="#0a0a0a" stroke="#1a1a1a" stroke-width="1"/>
+        <rect x="755" y="175" width="55" height="55" rx="2" fill="#1a0000" opacity="0.8"/>
+        <!-- Tail light pattern -->
+        <line x1="780" y1="175" x2="780" y2="230" stroke="#c0392b" stroke-width="1" opacity="0.6"/>
+        <line x1="795" y1="175" x2="795" y2="230" stroke="#c0392b" stroke-width="1" opacity="0.6"/>
+        <line x1="755" y1="200" x2="810" y2="200" stroke="#c0392b" stroke-width="1" opacity="0.4"/>
+
+        <!-- Uber Black badge -->
+        <rect x="370" y="255" width="155" height="20" rx="3" fill="#1a1a1a"/>
+        <text x="447" y="270" text-anchor="middle" fill="#c8a84b" font-size="9" font-family="Syne, sans-serif" font-weight="700" letter-spacing="3">UBER BLACK</text>
+
+        <!-- Chrome trim -->
+        <path d="M80 248 L820 248" stroke="#1f1f1f" stroke-width="2"/>
+        <path d="M82 212 L145 212 L145 214 L82 214" fill="#c8a84b" opacity="0.4"/>
+        <path d="M750 212 L815 212 L815 214 L750 214" fill="#c8a84b" opacity="0.4"/>
+
+        <!-- Light rays from headlight -->
+        <path d="M85 188 L0 160" stroke="#c8a84b" stroke-width="1" opacity="0.15"/>
+        <path d="M85 192 L0 200" stroke="#c8a84b" stroke-width="1.5" opacity="0.2"/>
+        <path d="M85 196 L0 240" stroke="#c8a84b" stroke-width="1" opacity="0.15"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="black-content">
+    <div class="section-label">Uber Black</div>
+    <h2 class="black-title">Silêncio.<br><em>Elegância.<br>Controle.</em></h2>
+    <p class="black-desc">Cada detalhe foi pensado para que você chegue ao destino exatamente como saiu — descansado, focado, pronto.</p>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-num">01</div>
+        <div class="feature-text">Carros de luxo nível executivo, renovados anualmente</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">02</div>
+        <div class="feature-text">Motoristas com treinamento premium e avaliação mínima 4.9</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">03</div>
+        <div class="feature-text">Silêncio no carro garantido. Água e Wi‑Fi inclusos</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-num">04</div>
+        <div class="feature-text">Reserva antecipada com hora marcada. Sem surpresas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS SECTION -->
+<section class="section-stats" id="sectionStats">
+  <div class="stats-inner">
+    <div class="stat-item" data-count="4.97">
+      <div class="stat-num" id="stat1">0</div>
+      <div class="stat-label">Avaliação média global</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item" data-count="98">
+      <div class="stat-num" id="stat2">0<span>%</span></div>
+      <div class="stat-label">Chegadas no prazo</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item" data-count="120">
+      <div class="stat-num" id="stat3">0<span>+</span></div>
+      <div class="stat-label">Cidades atendidas</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item" data-count="500">
+      <div class="stat-num" id="stat4">0<span>k</span></div>
+      <div class="stat-label">Viagens mensais</div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET SECTION -->
+<section class="section-fleet" id="sectionFleet">
+  <div class="fleet-header">
+    <div class="section-label light">Nossa frota</div>
+    <h2 class="fleet-title">Somente o<br><em>melhor</em></h2>
+  </div>
+  <div class="fleet-scroll-container">
+    <div class="fleet-track" id="fleetTrack">
+      <div class="fleet-card">
+        <div class="fleet-card-badge">Executivo</div>
+        <div class="fleet-car-name">Mercedes-Benz S-Class</div>
+        <div class="fleet-car-detail">V8 · Banco aquecido · Teto panorâmico</div>
+        <div class="fleet-indicator">●●●●●</div>
+      </div>
+      <div class="fleet-card">
+        <div class="fleet-card-badge">Premium</div>
+        <div class="fleet-car-name">BMW 750i</div>
+        <div class="fleet-car-detail">Twin-Turbo · Masagem · Wi-Fi 5G</div>
+        <div class="fleet-indicator">●●●●●</div>
+      </div>
+      <div class="fleet-card">
+        <div class="fleet-card-badge">Sport</div>
+        <div class="fleet-car-name">Audi A8 L</div>
+        <div class="fleet-car-detail">Matrix LED · Night vision · 21" wheels</div>
+        <div class="fleet-indicator">●●●●●</div>
+      </div>
+      <div class="fleet-card">
+        <div class="fleet-card-badge">SUV</div>
+        <div class="fleet-car-name">Volvo XC90</div>
+        <div class="fleet-car-detail">7 assentos · Tração integral · Silencioso</div>
+        <div class="fleet-indicator">●●●●●</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP / FOOTER SECTION -->
+<section class="section-map" id="sectionMap">
+  <div class="map-bg" id="mapBg">
+    <div class="map-grid"></div>
+    <div class="map-glow-center"></div>
+    <!-- City dots -->
+    <div class="city-dot" style="top:32%;left:48%" data-city="São Paulo"></div>
+    <div class="city-dot" style="top:28%;left:46%" data-city="Rio de Janeiro"></div>
+    <div class="city-dot" style="top:22%;left:53%" data-city="Brasília"></div>
+    <div class="city-dot" style="top:18%;left:43%" data-city="Belo Horizonte"></div>
+    <div class="city-dot" style="top:40%;left:38%" data-city="Porto Alegre"></div>
+    <div class="city-dot" style="top:25%;left:65%" data-city="Salvador"></div>
+    <div class="city-dot" style="top:15%;left:62%" data-city="Fortaleza"></div>
+    <div class="city-dot" style="top:20%;left:30%" data-city="Cuiabá"></div>
+    <div class="city-dot" style="top:10%;left:50%" data-city="Goiânia"></div>
+    <div class="city-dot" style="top:35%;left:44%" data-city="Curitiba"></div>
+  </div>
+  <div class="map-content">
+    <div class="section-label">Cobertura</div>
+    <h2 class="map-title">Em todo lugar<br>que <em>importa</em></h2>
+    <p class="map-sub">120+ cidades. Um mesmo padrão de excelência.</p>
+    <button class="btn-primary gold">Ver cidades disponíveis</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">UBER BLACK</div>
+      <p>O padrão de luxo em transporte urbano.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Produto</div>
+        <a href="#">Uber Black</a>
+        <a href="#">Uber Black SUV</a>
+        <a href="#">Reserva prévia</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Empresa</div>
+        <a href="#">Sobre</a>
+        <a href="#">Parceiros</a>
+        <a href="#">Motoristas</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Legal</div>
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Uber Technologies, Inc. Site conceitual criado com fins demonstrativos.</span>
+  </div>
+</footer>
+
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
